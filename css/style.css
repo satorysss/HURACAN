@@ -1,0 +1,348 @@
+body h2{
+    font: Bold 20px sans-serif;
+}
+
+.RECTANGLE-0{
+    display: flex;
+
+    height:2100px;
+    background:linear-gradient(180deg, #000000 0%,#282828 33%)}
+.RECTANGLE-2{
+    display: flex;
+    height:1900px;
+    background:linear-gradient(180deg, #737373 0%,#111111 29%)}
+.RECTANGLE-1{
+    margin-left: 6%;
+    margin-top: 100px;
+
+    height:3px;
+    background:linear-gradient(90deg, #9E9E9E 0%,#666666 100%)}
+nav{
+    color: white;
+    margin-top: 20px;
+    background: #1a1a1a;
+    height:65px;
+    display:flex;
+    flex-direction:column
+}
+.secondframe{
+    position: relative;
+    padding-top: 50px;
+}
+.imagesecondframe{
+    width: 100%;
+}
+.menu h1{
+    color: white;
+    padding-top: 150px;
+    margin-left: 40%;
+}
+
+nav ul {
+     list-style: none;
+     width: 100%;
+ }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo img{
+    width: 63%;
+
+}
+.num{
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    position: static;
+    width: auto;
+}
+nav a {
+
+    color: #ffffff;
+    display: block;
+    font: bold 18px "Alegreya Sans SC";
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+nav li:hover a {
+    background: #000000;
+}
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul#submenu {
+    opacity: 1;
+    top: 40px; /* adjust this as per top nav padding top & bottom comes */
+    visibility: visible;
+}
+#submenu li {
+    float: none;
+    width: 100%;
+}
+#submenu a:hover {
+    background: #df4b05;
+}
+#submenu a {
+    background-color: #000000;
+}
+
+
+
+
+
+/* slide_around */
+
+.slide_around_sec{
+    padding-top: 300px;
+    width:1000px;
+    position:relative;
+    margin:0 auto;
+
+}
+
+.roundabout-holder {
+    height: 500px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.roundabout-moveable-item {
+
+    margin:0;
+    padding:0;
+    cursor: pointer;
+
+    border: 1px solid #000000;
+    overflow:hidden;
+}
+.roundabout-in-focus {
+    cursor: auto;
+}
+
+.around_next,
+.around_prev {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    background: #000000; /* Оранжевый цвет */
+    z-index: 300;
+    top: 70%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border: none; /* Убираем границы кнопки */
+    outline: none; /* Убираем контур фокуса при нажатии */
+    color: #fff; /* Белый цвет текста */
+    font-size: 14px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.around_next{
+    right:0;
+}
+
+.around_prev{
+    left:0;
+}
+.slide_around_sec .slide_around li:not(.roundabout-in-focus) {
+    filter: blur(3px); /* Применяем размытие ко всем слайдам, кроме активного */
+}
+/* end slide_around */
+
+
+
+
+.container-my {
+    text-align: center;
+    padding-top: 10%;
+    grid-template-rows: minmax(auto, 700px) auto; /* Максимальная высота первой строки 700px */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Четыре колонки в первой строке */
+
+
+}
+.container-my > .thumbs {
+    grid-column: 1 / span 4; /* Расширяем элемент на все четыре колонки */
+}
+.container-my h2{
+    text-align: center;
+    padding: 100px;
+
+    color: white;
+}
+.container-my img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+
+.site-footer
+{
+    background-color: #151515;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color: #ffffff;
+}
+
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+.site-footer .social-icons
+{
+    text-align:right
+}
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+.copyright-text
+{
+    margin:0
+}
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+        margin-bottom:30px
+    }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+        padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+        text-align:center
+    }
+}
+.social-icons
+{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+.social-icons a
+{
+    display:inline-block;
+    margin-bottom:4px
+}
+
+
+.social-icons a.instagram:hover
+{
+    background-color:#3b5998
+}
+
+
+
+
+.thumbs {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+
+
+    > a {
+
+        max-width: 200px;
+        height: 200px;
+        margin: 20px;
+        overflow: hidden;
+
+
+        img {
+            transform: scale(1);
+            transition: transform 0.1s ease-in-out;
+
+            min-width: 200px;
+            min-height: 200px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 300px) {
+    nav{
+        max-width: 1920px;
+    }
+    .container-my{
+        max-width: 1920px;
+    }
+    .RECTANGLE-1{
+        max-width:1100px;
+    }
+    .RECTANGLE-0{
+        max-width: 1920px;
+    }
+}
