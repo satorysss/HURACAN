@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link href="./css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -11,58 +12,66 @@
 <body>
 <div class="RECTANGLE-0">
     <div class="container">
-        <nav>
-            <div class="row">
-                <div class="col-lg-3  ">
-                    <div class="logo">
-                        <img src="./img/LOG.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">Меню</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Акции</a></li>
-                    </ul>
-                </div>
-                <div class="col-3  num"><p>+7(323)656-23-23</p></div>
+        <nav class="navbar navbar-expand-lg navbar-dark  mt-3 ps-4">
+            <a class="navbar-brand col-md-3" href="index.html"><img src="./img/LOGO.png"  class="LOGO "></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav mr-auto col-md-5  ps-3">
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link text-white" href="index.html">Главная </a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link text-white" href="stock.html">Акции</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link text-white" href="#menu">Меню</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link text-white" href="#gallery">фотогаллерея </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
         <div class="secondframe">
-            <img class="imagesecondframe" src="./img/Frame%201.png">
-            <img class="centered"  src="./img/LOG.png" alt="">
+            <img class="imagesecondframe" src="./img/Frame1.png">
+            <img class="centered "  src="./img/LOGO.png" alt="">
             <div class="RECTANGLE-1 "></div>
         </div>
 
         <div class="menu">
             <h1>Наше меню</h1>
         </div>
-        <section class="slide_around_sec">
+
+        <section id="menu" class="slide_around_sec">
             <ul class="slide_around">
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png"  width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px"  alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png"  width="600px" height="1000px" alt="Slide 1"></li>
-                <li><img src="./img/Frame%203.png" width="600px" height="1000px"  alt="Slide 1"></li>
+                <li><img src="./img/Frame3.png"  alt="Slide 1"></li>
+                <li><img src="./img/Frame5.png"  alt="Slide 1"></li>
+                <li><img src="./img/Frame6.png"  alt="Slide 1"></li>
+                <li><img src="./img/Frame7.png"   alt="Slide 1"></li>
+                <li><img src="./img/Frame8.png"   alt="Slide 1"></li>
+                <li><img src="./img/Frame9.png"  alt="Slide 1"></li>
+                <li><img src="./img/Frame10.png"  alt="Slide 1"></li>
+
             </ul>
             <!-- end .slide_around -->
+
             <button class="around_next">&rarr;</button> <!-- Стрелка для перехода к следующему слайду -->
             <button class="around_prev">&larr;</button> <!-- Стрелка для перехода к предыдущему слайду -->
+
         </section>
         <!-- end .slide_around_sec -->
+
     </div>
 </div>
 
 <div class="RECTANGLE-2">
 
     <div class="container-my " data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
+        <h1 class="text-white ">HURACAN ЭТО </h1>
+        <ul>
             <div>
                 <img src="./img/games.png" alt="">
                 <div>
@@ -81,11 +90,13 @@
                 <img src="./img/drink.png" alt="">
                 <h2> Особенная авторская карта коктейлей </h2>
             </div>
+        </ul>
+
+            <h1 class="text-white galer">Фотогаллерея</h1>
+            <section id="gallery">
+            <div class="container thumbs" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
 
-
-
-        <div class="container thumbs">
 
                 <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg">
                     <img src="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg" alt=''>
@@ -99,75 +110,75 @@
 
 
 
-                <a  data-fslightbox="gal" href="https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg">
-                    <img src='https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg' alt=''>
+                <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408632.jpg">
+                    <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408632.jpg' alt=''>
                 </a>
 
 
 
-                <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                    <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+                <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408638.jpg">
+                    <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408638.jpg' alt=''>
                 </a>
 
-                <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                    <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+                <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408645.jpg">
+                    <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408645.jpg' alt=''>
                 </a>
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg">
-                <img src="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg" alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408650.jpg">
+                <img src="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408650.jpg" alt=''>
             </a>
 
 
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408633.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408633.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408653.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408653.jpg' alt=''>
             </a>
 
 
 
-            <a  data-fslightbox="gal" href="https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg">
-                <img src='https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408666.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408666.jpg' alt=''>
             </a>
 
 
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408687.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408687.jpg' alt=''>
             </a>
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408708.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408708.jpg' alt=''>
             </a>
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg">
-                <img src="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408631.jpg" alt=''>
-            </a>
-
-
-
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408633.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408633.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408691.jpg">
+                <img src="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408691.jpg" alt=''>
             </a>
 
 
 
-            <a  data-fslightbox="gal" href="https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg">
-                <img src='https://mskofficial.ru/uploads/1fcd54b4545e8d5b8de289b663015109.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408679.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408679.jpg' alt=''>
             </a>
 
 
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408676.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408676.jpg' alt=''>
             </a>
 
-            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg">
-                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408634.jpg' alt=''>
+
+
+            <a  data-fslightbox="gal" href="https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408655.jpg">
+                <img src='https://media2.vklybe.tv/photos/e327892/s121326/thumb/tbl12408655.jpg' alt=''>
             </a>
+
+
 
 
 
         </div>
+            </section>
+
     </div>
 
 
@@ -178,38 +189,36 @@
 
 
 <!-- Site footer -->
-<footer class="site-footer">
+<footer class="site-footer" >
     <div class="container">
         <div class="row">
-            <div class=" col-md-5">
-                <img src="./img/LOG.png" alt="">
+            <div class="col-md-5">
+                <img src="./img/LOGO.png" class="LOGO" alt="">
                 <div class="pt-5 text-light">
                     <h2>Адрес</h2>
                     <p>ул. Кирова, 109, Адлер</p>
                 </div>
-
             </div>
 
-            <div class="text-center pt-3 col-md-3">
+            <div class="text-center pt-3 col-md-3 col-sm-6">
                 <h6>Навигация</h6>
-                <ul class="footer-links ">
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Акции</a></li>
-
+                <ul class="footer-links">
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#gallery">Галлерея</a></li>
+                    <li><a href="stock.html">Акции</a></li>
                 </ul>
             </div>
 
-            <div class="pt-3 text-start col-md-3">
-                <p>+7 988 500-08-81</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <div class="pt-3 text-center col-md-4 col-sm-6">
+                <p>+7 (988) 500-08-81</p>
+
+                <a href="https://www.instagram.com/huracan_lounge_bar/" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg>
+                </svg></a>
+
             </div>
         </div>
-
     </div>
-
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

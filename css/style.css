@@ -1,31 +1,45 @@
 body h2{
     font: Bold 20px sans-serif;
+    line-height: unset;
+    letter-spacing: 1px;
 }
 
+nav a{
+
+    font: Bold 20px sans-serif;
+}
+nav ul a:hover{
+    background-color: #525252;
+}
 .RECTANGLE-0{
     display: flex;
-
     height:2100px;
+    background:linear-gradient(180deg, #000000 0%,#282828 33%)}
+.RECTANGLE-6{
+    display: flex;
+    height:1000px;
     background:linear-gradient(180deg, #000000 0%,#282828 33%)}
 .RECTANGLE-2{
     display: flex;
-    height:1900px;
+    height:2060px;
     background:linear-gradient(180deg, #737373 0%,#111111 29%)}
 .RECTANGLE-1{
-    margin-left: 6%;
     margin-top: 100px;
+    height:1px;
+    background:linear-gradient(90deg, #646464 0%,#666666 100%)}
 
-    height:3px;
-    background:linear-gradient(90deg, #9E9E9E 0%,#666666 100%)}
 nav{
+    background-color: #1f1f1f;
     color: white;
-    margin-top: 20px;
-    background: #1a1a1a;
-    height:65px;
-    display:flex;
-    flex-direction:column
+    text-decoration: none;
 }
+.navbar-toggler{
+    background-color: white;
+}
+
+
 .secondframe{
+
     position: relative;
     padding-top: 50px;
 }
@@ -35,80 +49,21 @@ nav{
 .menu h1{
     color: white;
     padding-top: 150px;
-    margin-left: 40%;
+
+}
+.menu{
+    text-align: center;
 }
 
-nav ul {
-     list-style: none;
-     width: 100%;
- }
 .centered {
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.logo img{
-    width: 63%;
-
-}
-.num{
-    padding-top: 25px;
-    text-align: center;
-}
 
 
-nav ul,
-nav li {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    float: left;
-    position: static;
-    width: auto;
-}
-nav a {
-
-    color: #ffffff;
-    display: block;
-    font: bold 18px "Alegreya Sans SC";
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-nav li:hover a {
-    background: #000000;
-}
-#submenu {
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 35px;
-    visibility: hidden;
-    z-index: 1;
-}
-li:hover ul#submenu {
-    opacity: 1;
-    top: 40px; /* adjust this as per top nav padding top & bottom comes */
-    visibility: visible;
-}
-#submenu li {
-    float: none;
-    width: 100%;
-}
-#submenu a:hover {
-    background: #df4b05;
-}
-#submenu a {
-    background-color: #000000;
-}
 
 
 
@@ -117,13 +72,17 @@ li:hover ul#submenu {
 /* slide_around */
 
 .slide_around_sec{
+    max-width: 1000px;
     padding-top: 300px;
-    width:1000px;
     position:relative;
     margin:0 auto;
-
 }
+.slide_around_sec img{
+    max-width: 500px;
 
+    object-fit: cover;
+    image-rendering: high-quality;
+}
 .roundabout-holder {
     height: 500px;
     margin:0;
@@ -135,7 +94,6 @@ li:hover ul#submenu {
     margin:0;
     padding:0;
     cursor: pointer;
-
     border: 1px solid #000000;
     overflow:hidden;
 }
@@ -150,17 +108,17 @@ li:hover ul#submenu {
     height: 50px;
     position: absolute;
     cursor: pointer;
-    background: #000000; /* Оранжевый цвет */
+    background: #000000;
     z-index: 300;
     top: 70%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    border: none; /* Убираем границы кнопки */
-    outline: none; /* Убираем контур фокуса при нажатии */
-    color: #fff; /* Белый цвет текста */
-    font-size: 14px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .around_next{
@@ -171,41 +129,45 @@ li:hover ul#submenu {
     left:0;
 }
 .slide_around_sec .slide_around li:not(.roundabout-in-focus) {
-    filter: blur(3px); /* Применяем размытие ко всем слайдам, кроме активного */
+    filter: blur(3px);
 }
 /* end slide_around */
 
-
-
+.galer{
+    margin-top: 300px;
+}
 
 .container-my {
+    height: 700px;
     text-align: center;
-    padding-top: 10%;
-    grid-template-rows: minmax(auto, 700px) auto; /* Максимальная высота первой строки 700px */
-    width: 100%;
+    padding-top: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Четыре колонки в первой строке */
+    list-style-type:none;
+}
+.container-my ul {
+    padding-top: 100px;
+    display: grid;
+    height:500px;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style: none;
+}
 
 
-}
-.container-my > .thumbs {
-    grid-column: 1 / span 4; /* Расширяем элемент на все четыре колонки */
-}
-.container-my h2{
+.container-my h2 {
+    font-family: "Book Antiqua";
     text-align: center;
     padding: 100px;
-
     color: white;
 }
-.container-my img{
+
+.container-my img {
     width: 300px;
-    height: 300px;
     border-radius: 20%;
 }
 
-
 .site-footer
 {
+
     background-color: #151515;
     padding:45px 0 20px;
     font-size:15px;
@@ -239,20 +201,8 @@ li:hover ul#submenu {
 {
     text-align:right
 }
-.site-footer .social-icons a
-{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    margin-left:6px;
-    margin-right:0;
-    border-radius:100%;
-    background-color:#33353d
-}
-.copyright-text
-{
-    margin:0
-}
+
+
 @media (max-width:991px)
 {
     .site-footer [class^=col-]
@@ -260,15 +210,23 @@ li:hover ul#submenu {
         margin-bottom:30px
     }
 }
-@media (max-width:767px)
-{
-    .site-footer
-    {
-        padding-bottom:0
+@media (max-width: 767px) {
+    .site-footer .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-        text-align:center
+
+    .site-footer .container .row .col-md-5,
+    .site-footer .container .row .col-md-3,
+    .site-footer .container .row .col-md-4 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .site-footer .container .row .col-md-5 img {
+        margin-bottom: 20px;
     }
 }
 .social-icons
@@ -293,11 +251,12 @@ li:hover ul#submenu {
 
 
 .thumbs {
+    padding-top: 200px;
     height: 500px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px;
+
 
 
     > a {
@@ -311,10 +270,8 @@ li:hover ul#submenu {
         img {
             transform: scale(1);
             transition: transform 0.1s ease-in-out;
-
-            min-width: 200px;
-            min-height: 200px;
-            max-width: 100%;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
         }
         &:hover {
@@ -327,22 +284,58 @@ li:hover ul#submenu {
 }
 
 
+@media screen and (max-width: 768px) {
+    .container-my > div > img {
 
-
-
-
-
-@media (min-width: 300px) {
-    nav{
-        max-width: 1920px;
+        width: 70px !important;
+        border-radius: 10% !important;
     }
-    .container-my{
-        max-width: 1920px;
+    .logo {
+        width: 20%;
+
     }
-    .RECTANGLE-1{
-        max-width:1100px;
+    .slide_around_sec{
+        max-width:100px;
+        padding-top: 100px;
+        position:relative;
+        margin:0 auto;
+    }
+    .slide_around_sec img{
+        max-width: 300px;
+
+        object-fit: cover;
+        image-rendering: high-quality;
     }
     .RECTANGLE-0{
-        max-width: 1920px;
+        max-height: 1500px;
+    }
+    .RECTANGLE-6{
+        height: 1500px;
+    }
+    .RECTANGLE-2{
+        height: 2800px;
+    }
+    .thumbs a img{
+        width: 120px;
+        height: 120px;
+    }
+    .container-my h2 {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .container-my ul {
+        padding-right: 25px;
+        display: grid;
+        height:300px;
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50% ;
+        list-style: none;
+    }
+    .around_next,
+    .around_prev {
+        display: none;
+    }
+    .container-my img {
+       width: 150px;
     }
 }
